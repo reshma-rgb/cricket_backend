@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <title>Teamwise Points</title>
+  <link rel="stylesheet" href="{% static 'style_file.css' %}">
+  </head>
+  <body>
+    <h1>Matches and Winners</h1>
+        {% for match in matches %}
+        <ul>
+            <li>{{ match.team1 }} <h3> VS </h3> {{ match.team2 }} <h3>Winner</h3> {{ match.winner }}
+           </li>
+          </ul>
+        {% endfor %}
+
+  </body>
+</html>

@@ -1,0 +1,246 @@
+[{
+  "model": "cricket.Team",
+  "pk": 1,
+  "fields": {
+    "team_name": "Chennai Super Kings",
+    "team_logo": "static/csk.jpg",
+    "team_state" : "Tamil Nadu"
+
+  }
+},
+{
+  "model": "cricket.Team",
+  "pk": 2,
+  "fields": {
+    "team_name": "Royal Challengers Banglore",
+    "team_logo": "static/rcb.jpg",
+    "team_state" : "Karnataka"
+
+  }
+},
+
+{
+  "model": "cricket.Team",
+  "pk": 3,
+  "fields": {
+    "team_name": "Mumbai Indians",
+    "team_logo": "static/mi.png",
+    "team_state" : "Maharashtra"
+
+  }
+},
+
+{
+  "model": "cricket.Team",
+  "pk": 4,
+  "fields": {
+    "team_name": "Kolkata Knight Riders",
+    "team_logo": "static/kkr.jpg",
+    "team_state" : "West Bengal"
+
+  }
+},
+
+{
+  "model": "cricket.Player",
+  "pk": 1,
+  "fields": {
+    "fname": "Shane ",
+    "lname": "Watson",
+    "jersey_num" : "10",
+    "pic" : "static/shane.jpg",
+    "country" : "Australia",
+    "team":1
+
+  }
+},
+
+{
+  "model": "cricket.Player",
+  "pk": 2,
+  "fields": {
+    "fname": "MS",
+    "lname": "Dhoni",
+    "jersey_num" : "1",
+    "pic" : "static/msd.jpg",
+    "country" : "India",
+    "team" : 1
+
+  }
+},
+
+{
+  "model": "cricket.Player",
+  "pk": 3,
+  "fields": {
+    "fname": "Virat ",
+    "lname": "Kohli",
+    "jersey_num" : "11",
+    "pic" : "static/virat.jpg",
+    "country" : "India",
+    "team" : 2
+
+  }
+},
+{
+  "model": "cricket.Player",
+  "pk": 4,
+  "fields": {
+    "fname": "AB",
+    "lname": "de Villiers",
+    "jersey_num" : "3",
+    "pic" : "static/ab.png",
+    "country" : "South Africa",
+    "team" : 2
+
+  }
+},
+
+{
+  "model": "cricket.Player",
+  "pk": 5,
+  "fields": {
+    "fname": "Rohit ",
+    "lname": "Sharma",
+    "jersey_num" : "49",
+    "pic" : "static/rohit.jpg",
+    "country" : "India",
+    "team" : 3
+
+  }
+},
+{
+  "model": "cricket.Player",
+  "pk": 6,
+  "fields": {
+    "fname": "Keiron",
+    "lname": "Pollard",
+    "jersey_num" : "50",
+    "pic" : "static/pollard.jpg",
+    "country" : "West Indies",
+    "team" : 3
+
+  }
+},
+
+{
+  "model": "cricket.Player",
+  "pk": 7,
+  "fields": {
+    "fname": "Dinesh ",
+    "lname": "Karthik",
+    "jersey_num" : "78",
+    "pic" : "static/karthik.jpg",
+    "country" : "India",
+    "team" : 4
+
+  }
+},
+{
+  "model": "cricket.Player",
+  "pk": 8,
+  "fields": {
+    "fname": "Andre",
+    "lname": "Russell",
+    "jersey_num" : "23",
+    "pic" : "static/russell.jpg",
+    "country" : "West Indies",
+    "team" : 4
+
+  }
+},
+
+{
+  "model": "cricket.Points",
+  "pk": 1,
+  "fields": {
+    "team" : "Chennai Super Kings",
+    "points" : "2"
+
+  }
+},
+{
+  "model": "cricket.Points",
+  "pk": 2,
+  "fields": {
+    "team" : "Royal Challengers Banglore",
+    "points" : 2
+
+  }
+},
+{
+  "model": "cricket.Points",
+  "pk": 3,
+  "fields": {
+    "team" : "Mumbai Indians",
+    "points" : "1"
+
+  }
+},
+{
+  "model": "cricket.Points",
+  "pk": 4,
+  "fields": {
+    "team" : "Kolkata Knight Riders",
+    "points" : "1"
+
+  }
+},
+{
+  "model": "cricket.Match",
+  "pk": 1,
+  "fields": {
+    "team1" : "Chennai Super Kings",
+    "team2" : "Royal Challengers Banglore",
+    "winner":"Royal Challengers Banglore"
+
+  }
+},
+{
+  "model": "cricket.Match",
+  "pk": 2,
+  "fields": {
+    "team1" : "Chennai Super Kings",
+    "team2" : "Mumbai Indians",
+    "winner":"Chennai Super Kings"
+
+  }
+},
+{
+  "model": "cricket.Match",
+  "pk": 3,
+  "fields": {
+    "team1" : "Chennai Super Kings",
+    "team2" : "Kolkata Knight Riders",
+    "winner":"Chennai Super Kings"
+
+  }
+},
+{
+  "model": "cricket.Match",
+  "pk": 4,
+  "fields": {
+    "team1" : "Royal Challengers Banglore",
+    "team2" : "Kolkata Knight Riders",
+    "winner":"Kolkata Knight Riders"
+  }
+},
+{
+  "model": "cricket.Match",
+  "pk": 5,
+  "fields": {
+    "team1" : "Royal Challengers Banglore",
+    "team2" : "Mumbai Indians",
+    "winner":"Royal Challengers Banglore"
+  }
+},
+{
+  "model": "cricket.Match",
+  "pk": 6,
+  "fields": {
+    "team1" : "Mumbai Indians",
+    "team2" : "Kolkata Knight Riders",
+    "winner":"Mumbai Indians"
+  }
+}
+]

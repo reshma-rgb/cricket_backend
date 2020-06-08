@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <title>Team</title>
+  <link rel="stylesheet" href="{% static 'style_file.css' %}">
+  </head>
+  <body>
+    <h1>Teams</h1>
+        {% for team in object_list %}
+        <ul>
+            <li><a href="/team/{{ team.id }}/">{{ team.team_name }}</a>
+             <img src="{{ team.team_logo }}" alt="No image Found" width="50" height="50"/>
+           </li>
+          </ul>
+        {% endfor %}
+    <br>
+    <a href="/points/">Check Points</a>
+    <br>
+    <a href="/matches/">Check Matches</a>
+  </body>
+</html>

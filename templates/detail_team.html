@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Team Info</h1>
+    <h2>{{ team.team_name }}</h2>
+    {% for player in players %}
+    <ul>
+        <li><h3>{{ player.fname }} {{ player.lname }}  </h3>
+        </li>
+    </ul>
+    {% endfor %}
+  </body>
+</html>
